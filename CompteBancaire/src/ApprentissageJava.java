@@ -13,6 +13,15 @@ public class ApprentissageJava {
 		CompteBancaire objPittLivA;
 		CompteBancaire objPittAssVie;
 		
+		Client ouistiti;
+		Client shlakbuk;
+		Client tatouin;
+		
+		ouistiti = new Client();
+		shlakbuk = new Client();
+		tatouin = new Client();
+		
+		
 		objPittDAV = new CompteBancaire();
 		objPittCSL = new CompteBancaire();
 		objPittLivA = new CompteBancaire();
@@ -42,6 +51,10 @@ public class ApprentissageJava {
 		in.close();*/
 		
 		/*CompteBancaire.saisieDesInformationsBancaires();*/
+		ouistiti.saisieDesInformationsClients("lolo");
+		shlakbuk.saisieDesInformationsClients("lala");
+		tatouin.saisieDesInformationsClients("lulu");
+		
 		objPittDAV.saisieDesInformationsBancaires("DAV");
 		objPittCSL.saisieDesInformationsBancaires("CSL");
 		objPittLivA.saisieDesInformationsBancaires("LivA");

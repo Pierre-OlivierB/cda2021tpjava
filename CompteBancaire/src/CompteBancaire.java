@@ -65,6 +65,7 @@ public class CompteBancaire {
 		
 		
 		affichageDesInformationsBancaires(numVerif,nomVerif,soldeVerif);
+		
 	}
 	
 	public void affichageDesInformationsBancaires(int numVerif, String nomVerif,int soldeVerif) {
