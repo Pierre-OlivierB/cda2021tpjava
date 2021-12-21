@@ -1,5 +1,9 @@
 package coursTp5;
 
-public class Pomme {
+import java.awt.Color;
 
+public class Pomme {
+	/*String couleur;*/
+	java.awt.Color couleur;
+	public int calibre;
 }
