@@ -1,25 +1,53 @@
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
-public class Client {
-	private String nom;
+public class Client extends Personne{
+	private char type;
+	
+	public char getType() {
+		return type;
+	}
+	public void setType(char t) {
+		this.type = t;
+	}
+	@Override
+	public void affichage() {
+		super.affichage();
+		/*System.out.println("Son prenom est : "+getDateNaissance());*/
+		switch (type) {
+		case 'P':
+			System.out.println("type de client: Particulier");
+			break;
+		case 'E':
+			System.out.println("type de client: Entreprise");
+			break;
+		case 'A':
+			System.out.println("type de client: Administration");
+			break;
+		default:
+			System.out.println("type de client: Inconnu");
+			break;
+		}
+	}
+	
+	/*private String nom;
 	private String prenom;
 	private String adresseLigne1;
 	private String adresseLigne2;
 	private String adresseCP;
 	private String adresseVille;
-	private GregorianCalendar dateDeNaissance;
+	private GregorianCalendar dateDeNaissance;*/
 	
-	public Client(){
-		nom="defaut";
+	/*public Client(){*/
+		/*nom="defaut";
 		prenom="defaut";
 		adresseLigne1="defaut";
 		adresseLigne2="defaut";
 		adresseCP="defaut";
-		adresseVille="defaut";
+		adresseVille="defaut";*/
 		/*dateDeNaissance= new GregorianCalendar();*/
 	}
-	public Client(String nom, String prenom, GregorianCalendar dateDeNaissance) {
+	/*public Client(String nom, String prenom, GregorianCalendar dateDeNaissance) {
 		
 	}
 	Scanner verifClient = new Scanner(System.in);
@@ -31,7 +59,7 @@ public class Client {
 		
 		/*verifClient.nextLine();*/
 				
-		saisiePrenom();
+		/*saisiePrenom();
 				
 		saisieAdresseLign1();		
 		
@@ -50,11 +78,17 @@ public class Client {
 		System.out.println("Vous êtes né le: "+ GregorianCalendar(anneeNaisVerif,moisNaisVerif,jourNaisVerif));*/
 		
 		
-		affichageDesInformationsClients();
+		/*affichageDesInformationsClients();
 	}
 	
 	public void affichageDesInformationsClients() {
-		System.out.println("Informations, nom: "+nom+" ; prenom: "+prenom+"; adresse Ligne 1: "+adresseLigne1+" adresse Ligne 2: "+adresseLigne2+" code postal: "+adresseCP+" Ville: "+ adresseVille);
+		System.out.println("");
+		System.out.println("Informations, nom: "+nom+" ; prénom: "+prenom);
+		System.out.println("Adresse Ligne 1: "+adresseLigne1);
+		System.out.println("Adresse Ligne 2: "+adresseLigne2);
+		System.out.println("Code postal: "+adresseCP);
+		System.out.println("Ville: "+ adresseVille);
+		System.out.println("");
 	}
 	public void saisieNom() {
 		System.out.println("Veuillez saisir le nom du client: ");
@@ -74,7 +108,7 @@ public class Client {
 	/*public void saisieDateDeNaissance() {
 	
 	}*/
-	public void saisieAdresseLign1() {
+	/*public void saisieAdresseLign1() {
 		System.out.println("Veuillez saisir l'adresse ligne 1: ");
 		adresseLigne1 = verifClient.nextLine();
 		System.out.println("Vous avez saisi: "+ adresseLigne1);
@@ -135,4 +169,4 @@ public class Client {
 	}
 	
 	
-}
+}*/
