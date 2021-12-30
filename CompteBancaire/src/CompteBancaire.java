@@ -50,6 +50,7 @@ public class CompteBancaire {
 		Scanner verif = new Scanner(System.in);
 		int numVerif = verif.nextInt();
 		System.out.println("Vous avez saisi le numero du compte: "+ numVerif);
+		numCpte=numVerif;
 		
 		verif.nextLine();
 		
@@ -60,7 +61,7 @@ public class CompteBancaire {
 		
 
 		System.out.println("Veuillez saisir le numero du solde: ");
-		int soldeVerif = verif.nextInt();
+		float soldeVerif = (float)verif.nextDouble();
 		System.out.println("Vous avez saisi le numero du solde: "+ soldeVerif);
 		
 		
@@ -68,7 +69,10 @@ public class CompteBancaire {
 		
 	}
 	
-	public void affichageDesInformationsBancaires(int numVerif, String nomVerif,int soldeVerif) {
+	public void affichageDesInformationsBancaires(int numVerif, String nomVerif,float soldeVerif) {
 		System.out.println("Vos informations sont les suivantes, num compte: "+numVerif+" ;nom du compte: "+nomVerif+"; son solde: "+soldeVerif+"€");
+	}
+	public void affichageDesInformationsBancaires() {
+		System.out.println("Vos informations sont les suivantes, num compte: "+numCpte+" ;nom du compte: "+nomCpte+"; son solde: "+solde+"€");
 	}
 }

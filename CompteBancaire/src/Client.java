@@ -29,6 +29,13 @@ public class Client extends Personne{
 			break;
 		}
 	}
+	public Client() {
+		super();
+	}
+	public Client (String nom,String prenom, char type) {
+		super(nom,prenom);
+		
+	}
 	
 	/*private String nom;
 	private String prenom;
