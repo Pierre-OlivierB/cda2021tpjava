@@ -37,14 +37,23 @@ public class CoursTp5 {
 		
 		/*CoursTp5 dante= new CoursTp5();*/
 		
-		Attributs danteAttributs= new Attributs();
+		/*Attributs danteAttributs= new Attributs();
 		
 		danteAttributs.showAttributes("explorant", 2, 510 );
 		System.out.println("Augmentation vitesse...3. ");
 		danteAttributs.showAttributes("explorant", 3, 510 );
 		System.out.println("Changement température... 670");
 		System.out.println("Vérification de la température.");
-		danteAttributs.checkTemperature(670);
+		danteAttributs.checkTemperature(670);*/
+		/*Partie article*/
+		article test1;
+		article test2;
+		
+		test1=new article();
+		test2=new article();
+		
+		test1.afficheArticle(142, "Lampe", 15);
+		test2.afficheArticle(18,"Camion",162);
 		
 		
 		
