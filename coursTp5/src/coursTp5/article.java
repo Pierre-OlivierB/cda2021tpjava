@@ -24,8 +24,8 @@ public class article {
 		this.prix=cout;
 	}
 	public void afficheArticle(int reference,String designation, int prix){
-		System.out.println("Sa référence est le: "+ reference);
-		System.out.println("Sa désignation est là: "+ designation);
+		System.out.print("Sa référence est le: "+ reference+". ");
+		System.out.print("Sa désignation est là: "+ designation+". ");
 		System.out.println("Son prix est de: "+ prix+"€");
 	}
 	
