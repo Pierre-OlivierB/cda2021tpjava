@@ -12,6 +12,8 @@ public class Livre extends article {
 	public void setAuthor(String autName) {
 		this.author=autName;
 	}
+	
+	
 	public String getISBN(){
 		return ISBN;
 	}

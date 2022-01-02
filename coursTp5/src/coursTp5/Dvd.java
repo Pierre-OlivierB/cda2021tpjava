@@ -1,7 +1,7 @@
 package coursTp5;
 
 
-public class Dvd extends article{
+public class Dvd extends Personne{
 	private String dvdName;
 	private int dvdDuration;
 	private String director; 
@@ -32,6 +32,10 @@ public class Dvd extends article{
 		System.out.println("Le nom du dvd est le suivant: "+ t+".");
 		System.out.println("Le temps du film est de: "+ min+"minutes. Son réalisateur est :"+maker+".");
 	}
-
+	public Dvd(String nom, String prenom) {
+		super(nom,prenom);
+		System.out.println(nom);
+		System.out.print(prenom);
+	}
 
 }

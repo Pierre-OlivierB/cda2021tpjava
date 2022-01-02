@@ -29,4 +29,5 @@ public class article {
 		System.out.println("Son prix est de: "+ prix+"€");
 	}
 	
+	
 }

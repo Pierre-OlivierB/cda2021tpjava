@@ -64,12 +64,13 @@ public class CoursTp5 {
 		test1.afficheArticle(142, "Lampe", 15);
 		test2.afficheArticle(18,"Camion",162);
 		
-		test3.afficheArticle(151, "Hella", 25);
+		/*test3.afficheArticle(151, "Hella", 25);*/
 		test3.dvdDescription("Vf = Hello", 150, "O'Donell");
 		
 		test4.afficheArticle(200, "Le vieux loup", 19);
 		test4.livreDescription("La vieille louve", "A58B89N", 155, "Mc Henri");
 		
+		Dvd d= new Dvd("CHATON", "Marina");
 		
 
 		
